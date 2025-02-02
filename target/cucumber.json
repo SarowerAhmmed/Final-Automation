@@ -1,0 +1,394 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2025-02-02T19:50:20.024Z",
+        "line": 17,
+        "name": "As a Smattech online banking user, login should success with valid credential but failed with invalid credencial",
+        "description": "",
+        "id": "login-function-test;as-a-smattech-online-banking-user--login-should-success-with-valid-credential-but-failed-with-invalid-credencial;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2357474900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Open browser",
+            "match": {
+              "location": "Stepdef.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 444903700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Go to application",
+            "match": {
+              "location": "Stepdef.go_to_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191847600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Put user \"Batch41\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batch41\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Stepdef.put_user(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86123700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Put pass \"student123@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student123@\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Stepdef.put_pass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84250200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click login button",
+            "match": {
+              "location": "Stepdef.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230962500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Validate login",
+            "match": {
+              "location": "Stepdef.validate_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Functional"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Positive"
+          },
+          {
+            "name": "@Negative"
+          },
+          {
+            "name": "@TC_QB4N_38"
+          },
+          {
+            "name": "@TC_QB4N_39"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-02T19:50:23.427Z",
+        "line": 18,
+        "name": "As a Smattech online banking user, login should success with valid credential but failed with invalid credencial",
+        "description": "",
+        "id": "login-function-test;as-a-smattech-online-banking-user--login-should-success-with-valid-credential-but-failed-with-invalid-credencial;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1891171300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Open browser",
+            "match": {
+              "location": "Stepdef.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 378314300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Go to application",
+            "match": {
+              "location": "Stepdef.go_to_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265020400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Put user \"Batch55\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batch55\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Stepdef.put_user(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76869200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Put pass \"sarower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sarower\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Stepdef.put_pass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64680300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click login button",
+            "match": {
+              "location": "Stepdef.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Invalid username or password}\n  (Session info: chrome\u003d132.0.6834.160): Invalid username or password\nBuild info: version: \u00274.25.0\u0027, revision: \u00278a8aea2337\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002723\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [d7bf4322d406c37d7b074414f8611dc4, findElement {value\u003d//*[text()\u003d\u0027Logout\u0027], using\u003dxpath}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\\Users\\sarow\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51541}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51541/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: d7bf4322d406c37d7b074414f8611dc4\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat com.test.run.Stepdef.validate_login(Stepdef.java:49)\r\n\tat ✽.Validate login(file:src/main/resources/Online_Banking_Login.feature:13)\r\n",
+              "duration": 21578500,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "Validate login",
+            "match": {
+              "location": "Stepdef.validate_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Functional"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Positive"
+          },
+          {
+            "name": "@Negative"
+          },
+          {
+            "name": "@TC_QB4N_38"
+          },
+          {
+            "name": "@TC_QB4N_39"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-02T19:50:26.132Z",
+        "line": 19,
+        "name": "As a Smattech online banking user, login should success with valid credential but failed with invalid credencial",
+        "description": "",
+        "id": "login-function-test;as-a-smattech-online-banking-user--login-should-success-with-valid-credential-but-failed-with-invalid-credencial;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1922184200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Open browser",
+            "match": {
+              "location": "Stepdef.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 557256700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Go to application",
+            "match": {
+              "location": "Stepdef.go_to_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198065600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Put user \"null\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"null\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Stepdef.put_user(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63168900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Put pass \"null\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"null\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Stepdef.put_pass(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94353300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click login button",
+            "match": {
+              "location": "Stepdef.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Invalid username or password}\n  (Session info: chrome\u003d132.0.6834.160): Invalid username or password\nBuild info: version: \u00274.25.0\u0027, revision: \u00278a8aea2337\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002723\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9df11264a8d67e7b735aea24a39a4c46, findElement {value\u003d//*[text()\u003d\u0027Logout\u0027], using\u003dxpath}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\\Users\\sarow\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51558}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51558/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9df11264a8d67e7b735aea24a39a4c46\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat com.test.run.Stepdef.validate_login(Stepdef.java:49)\r\n\tat ✽.Validate login(file:src/main/resources/Online_Banking_Login.feature:13)\r\n",
+              "duration": 11067800,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "Validate login",
+            "match": {
+              "location": "Stepdef.validate_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Functional"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Positive"
+          },
+          {
+            "name": "@Negative"
+          },
+          {
+            "name": "@TC_QB4N_38"
+          },
+          {
+            "name": "@TC_QB4N_39"
+          }
+        ]
+      }
+    ],
+    "name": "Login function test",
+    "description": "Description: \tUsers can successfully login with valid credentials",
+    "id": "login-function-test",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Online_Banking_Login.feature",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Functional",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 20
+        }
+      }
+    ]
+  }
+]
