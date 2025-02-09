@@ -1,0 +1,14 @@
+com\db\manager\DBManger.class
+com\api\Read.class
+com\util\ScreenShot.class
+com\api\Delete.class
+com\api\Update.class
+com\selenium\pagefactory\SeleniumPageFactory.class
+com\generic\Account.class
+com\generic\Login.class
+com\util\SeleniumWait.class
+com\util\BaseConfig.class
+com\api\Create.class
+com\excel\manager\ExcelManager.class
+com\generic\Payment.class
+com\util\Highlighter.class

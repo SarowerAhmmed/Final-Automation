@@ -13,7 +13,12 @@ Description: 	Users can successfully login with valid credentials
     Then Validate login
 
     Examples: 
-      | User    | Pass 				|
-      | Batch41 | student123@ | 
-      | Batch55	| sarower  		| 
-      | null		| null				|
+      | User    			| Pass 						|
+      | VALID_USER 		| VALID_PASS 			| 
+      | VALID_USER		| INVALID_PASS		| 
+      | INVALID_USER	| VALID_PASS			|
+      | INVALID_USER	| INVALID_PASS		|
+      | NULL_USER			| NULL_PASS				|
+      | VALID_USER		| NULL_PASS				|
+      | NULL_USER			| VALID_PASS			|
+      
