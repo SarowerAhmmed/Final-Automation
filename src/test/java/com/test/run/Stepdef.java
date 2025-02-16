@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.asserts.SoftAssert;
 
+import com.excel.manager.ExcelManager;
 import com.selenium.pagefactory.SeleniumPageFactory;
 import com.util.BaseConfig;
 
@@ -20,7 +21,7 @@ public class Stepdef {
 	WebDriver driver;
 	SeleniumPageFactory pf;
 	BaseConfig bc;
-
+	ExcelManager obj;
 	@Given("Open browser")
 	public void open_browser() {
 		driver = new ChromeDriver();
@@ -69,7 +70,36 @@ public class Stepdef {
 		}
 
 	}
+	@When("Put user {string} from Excel")
+	public void put_user_from_Excel(String rowAndCol) {
+		pf = new SeleniumPageFactory(driver);
+		 obj = new ExcelManager();
+		//rowAndCol=1_0
+		String [] myRowAndCol= rowAndCol.split("_");//break into 2 value= Array or Collection
+		//1st Value =Row ==>myRowAndCol[0] =string
+		//2nd value =Col==>myRowAndCol[1] =string
+		// String to int
+		int romNum = Integer.parseInt(myRowAndCol[0]);
+		int colNum = Integer.parseInt(myRowAndCol[1]);
+		
+		pf.getUser().sendKeys(obj.readExcel(romNum,colNum));
+	}
 
+	@When("Put pass {string} from Excel")
+	public void put_pass_from_Excel(String rowAndCol) {
+		
+		String [] myRowAndCol= rowAndCol.split("_");//break into 2 value= Array or Collection
+		//1st Value =Row ==>myRowAndCol[0] =string
+		//2nd value =Col==>myRowAndCol[1] =string
+		// String to int
+		int romNum = Integer.parseInt(myRowAndCol[0]);
+		int colNum = Integer.parseInt(myRowAndCol[1]);
+		
+		pf.getPass().sendKeys(obj.readExcel(romNum,colNum));
+	}
+
+
+	
 	@Then("Validate login")
 	public void validate_login() {
 
